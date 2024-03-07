@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather.io</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body class="bg-blue-200 flex flex-col items-center justify-center">
     <div class="w-screen">
       <div class="container mx-auto flex flex-col items-center justify-center">
-        <h1 class="font-bold text-4xl p-2 mt-10">Weather.io</h1>
+        <h1 id="title" class="font-bold text-4xl p-2 mt-10">Weather.io</h1>
       </div>
       <div class="container mx-auto p-4 mt-5">
         <form>
@@ -31,7 +31,7 @@
           <div class="m-5">
             <button
               class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              id="weatherBtn"
+              id="btn"
             >
               Get weather
             </button>
@@ -41,8 +41,12 @@
         <div class="weather-display">
           <div class="bg-white rounded-lg p-6 shadow-lg">
             <!-- Weather content here -->
-            <div id="location"></div>
-            <div id="data"></div>
+
+            <div id="city"></div>
+            <div id="temp"></div>
+            <div id="humid"></div>
+
+
           </div>
         </div>
       </div>
